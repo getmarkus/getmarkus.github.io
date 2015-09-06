@@ -10,6 +10,17 @@ layout: default
     .mdl-layout__header-row .mdl-navigation__link {
         color: white;
     }
+    
+    .custom-drawer-header {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 16px;
+        height: 151px;
+        background: url('../assets/blackelegance_opt.jpg') center / cover;
+        color: white;
+    }
 </style>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--fixed-header">
@@ -28,13 +39,15 @@ layout: default
         </div>
     </header>
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">{{ site.title }}</span>
+        <header class="custom-drawer-header">
+            <span class="mdl-layout-title">{{ site.name }}</span>
+            <span>{{ site.title }}</span>
+        </header>
         <nav class="mdl-navigation">
             {% include left_nav.html %}
         </nav>
     </div>
     <main class="mdl-layout__content">
-        {{ content }}
-        {% include footer.html %}
+        {{ content }} {% include footer.html %}
     </main>
 </div>
