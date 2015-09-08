@@ -13,8 +13,11 @@ Consider just creating a static website.  Use Markdown for content creation.  St
 
 ##### Why?
 Static is easy
+
 Static love's version control
+
 Nothing is faster than static, server or client
+
 Very fast and flexible prototypes
 
 But the PM argues, all data must be a database!  'Unlikely' is the correct answer, because source control systems essentially act as databases.  Or, the data that does need to live in a database can still remain there.  The act of storing data in a database doesn't mean it needs to be dynamically served from that database.  Sometimes it does, but it depends on your content latency requirements.
