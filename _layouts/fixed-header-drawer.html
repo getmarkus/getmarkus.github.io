@@ -18,24 +18,42 @@ layout: default
         justify-content: flex-end;
         padding: 16px;
         height: 151px;
-        background: url('../assets/blackelegance_opt.jpg') center / cover;
+        background: url('{{ site.url }}assets/blackelegance_opt.jpg') center / cover;
         color: white;
+    }
+    
+    .mdl-navigation__link .zmdi {
+        margin-right: 32px;
+    }
+    
+    .mdl-navigation__link {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.56);
+        font-weight: 500;
     }
 </style>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">{{ site.name }} - {{ site.title }}</span>
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
-                <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
-                    <i class="material-icons">search</i>
-                </label>
-                <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp" />
-                </div>
-            </div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="{{ site.url }}index.html">Blog</a>
+                <a class="mdl-navigation__link" href="{{ site.url }}resume.html">Resume</a>
+            </nav>
         </div>
     </header>
     <div class="mdl-layout__drawer">
