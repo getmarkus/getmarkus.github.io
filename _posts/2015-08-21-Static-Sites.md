@@ -3,7 +3,6 @@ layout: post
 title: Static websites for the .Net Developer
 ---
 
-##### Don't default to ASP.Net MVC - EF
 Consider this scenario that plays out often in a Enterprise .Net developer's life.  You are busying trying to get the last project you were assigned actually working correctly or shoving in last minute requirements nobody bothered to tell you about, when you get a drive-by from an Analyst or PM requesting you spin-up a quick and simple website.  Famous last words.  Worse, since the the Analyst or PM have been working around .Net devs for a while, possibly he or she stipulates it should be Asp.Net MVC - EF ...etc.<!--more-->
 
 ##### Why?  
