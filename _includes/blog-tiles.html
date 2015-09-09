@@ -1,14 +1,15 @@
 <style>
-    .demo-card-wide.mdl-card {
-        width: 512px;
+    .mdl-card {
         margin-bottom: 48px;
+        width: auto;
     }
     
 </style>
 
 {% for post in site.posts %}
 
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+<div class="mdl-card mdl-shadow--2dp">
+   <div class="mdl-layout-spacer"></div>
     <div class="mdl-card__title" style="padding-bottom: 0px;">
         <h2 class="mdl-card__title-text">{{ post.title }}</h2>
     </div>
