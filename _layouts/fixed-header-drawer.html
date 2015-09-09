@@ -48,7 +48,7 @@ layout: default
             mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">{{ site.name }} - {{ site.title }}</span>
+            <a class="mdl-navigation__link" href="/"><span class="mdl-layout-title">{{ site.name }} - {{ site.title }}</span></a>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
                 <a class="mdl-navigation__link" href="{{ site.url }}index.html">Blog</a>
@@ -58,8 +58,8 @@ layout: default
     </header>
     <div class="mdl-layout__drawer">
         <header class="custom-drawer-header">
-            <span class="mdl-layout-title">{{ site.name }}</span>
-            <span>{{ site.title }}</span>
+            <a class="mdl-navigation__link" href="/"><span class="mdl-layout-title">{{ site.name }}</span></a>
+            <a class="mdl-navigation__link" href="/"><span>{{ site.title }}</span></a>
         </header>
         <nav class="mdl-navigation">
             {% include left_nav.html %}
