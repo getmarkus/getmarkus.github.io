@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<style>
+    .content {
+        padding: 36px 56px;
+    }
+</style>
+<style media="print">
+    @media print {
+        .content {
+            padding: 0px;
+        }
+    }
+</style>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone no-print"></div>
+    <div class="mdl-color--white mdl-shadow--4dp content mdl-cell mdl-cell--8-col">
+        {{ content }}
+    </div>
+</div>
