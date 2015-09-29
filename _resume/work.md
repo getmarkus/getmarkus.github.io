@@ -16,7 +16,7 @@ Team Foundation Server (TFS) 2012, 2013, 2015, Visual Studio Online, Powershell,
 Manager, DevOps Architect, Build Engineer, Deployment Engineer, Software Developer, Architect, SOC Control Owner, Mentor
 
 * **Projects**:
-TFS Upgrade and Installation projects, Visual Studio Online migrations, Octopus Deploy implementation, software development on inhouse DevOps tools and SOC and ITIL projects
+TFS Upgrade and Installation projects, Visual Studio Online migrations, Octopus Deploy implementation, build engineering, deployment engineering, software development on inhouse DevOps tools and SOC and ITIL projects
 
 **Polaris Industries**  
 **Senior Web Application Developer**  
