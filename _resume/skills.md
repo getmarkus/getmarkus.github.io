@@ -8,8 +8,8 @@ type: skill_item
 
 * **Server Frameworks and Technologies**: .Net, Asp.Net - MVC, SSIS, SSRS, SQL Server, BizTalk, WWF, Message Broker, DataPower, MQSeries, MSMQ
 
-* **Web Frameworks**: Jekyll, Liquid, JQuery, Knockout, Angular, Bootstrap, Material Design Lite, Highcharts, Dundas
+* **Web Frameworks**: Jekyll, Liquid, jQuery, Knockout, Angular, Bootstrap, Material Design Lite, Highcharts, Dundas
 
-* **SDLC Tools**: TFS, Visual Studio Online, Git, Subversion, Octopus Deploy, BuildMaster, Gradle, MSBuild, Nuget, Docker, NUnit, VSTest
+* **SDLC Tools**: TFS, Visual Studio Online, Git, Subversion, Octopus Deploy, BuildMaster, Gradle, MSBuild, Nuget, Docker, NUnit, Vs Test
 
 * **Industries**: Financial, Retail/Wholesale, HVAC - BACnet, Commercial Software, Manufacturing

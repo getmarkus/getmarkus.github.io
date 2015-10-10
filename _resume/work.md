@@ -6,7 +6,7 @@ type: work_item
 Contact me for full resume
 
 **LTCG**  
-**DevOps Architect**  
+**Software Developer and Architect**  
 **11/2014 - Present**  
 
 * **Skills and Technologies**:
@@ -48,3 +48,19 @@ Design Lead on the Data Logs and Data Visualization components, Software Develop
 * **Projects**:
 Trane Enterprise Server - Web and Server commercial software product sold to Trane clients that integrated Trane and Industry HVAC controls and data
 Verifications, Inc - Workflow and Business Rules Server
+
+**GMAC-RFC (ResCap)**  
+**Software Developer**  
+**8/2004 – 3/2007** 
+
+**Tech-Pro (Client: GMAC-RFC)**   
+**Software Developer / Consultant**  
+**9/2002 - 8/2004** 
+
+**Microgistix**   
+**Software Developer**  
+**3/2001 - 9/2002**    
+
+**New Access Communications**   
+**Software Developer**  
+**8/2000 - 3/2001**  
