@@ -99,7 +99,7 @@
             mdl-layout--fixed-header">
         <header class="mdl-layout__header no-print">
             <div class="mdl-layout__header-row">
-                <a class="mdl-navigation__link" href="/"><span class="mdl-layout-title">{{ site.name }}&nbsp;</span><span class="mdl-layout-title no-print">- {{ site.title }}</span></a>
+                <a class="mdl-navigation__link" href="/"><span class="mdl-layout-title">{{ site.name }}</span></a>
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                 </nav>
@@ -107,7 +107,8 @@
         </header>
         <div class="mdl-layout__drawer no-print">
             <header class="custom-drawer-header">
-                <a class="mdl-navigation__link" href="/"><span class="mdl-layout-title">{{ site.name }}</span></a>
+                <a class="mdl-navigation__link" href="/"><span class="mdl-layout-title">{{ site.author }}</span></a>
+                <a class="mdl-navigation__link" href="/"><span>{{ site.title }}</span></a>
             </header>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="mailto:{{ site.email }}"><i class="zmdi zmdi-email zmdi-hc-2x"></i>{{ site.email }}</a>
