@@ -4,12 +4,12 @@ type: skill_item
 
 ####Skills
 
-* **Programming Languages**: C#, JavaScript, SQL, F#, PowerShell, Groovy
+* **Programming Languages**: C#, SQL, JavaScript, F#
 
-* **Server Frameworks and Technologies**: .Net, Asp.Net - MVC, SSIS, SSRS, SQL Server, BizTalk, WWF, Message Broker, DataPower, MQSeries, MSMQ
+* **Server Frameworks and Technologies**: .Net, Asp.Net - (Web Forms, MVC and Web API), Entity Framework (and other ORMs), SQL Server
 
-* **Web Frameworks**: Jekyll, Liquid, jQuery, Knockout, Angular, Bootstrap, Material Design Lite, Highcharts, Dundas
+* **Web Frameworks and Technologies**:  jQuery, Knockout, Angular, Bootstrap, Material Design Lite, CSS, Jekyll, Liquid
 
-* **SDLC Tools**: TFS, Visual Studio Online, Git, Subversion, Octopus Deploy, BuildMaster, Gradle, MSBuild, Nuget, Docker, NUnit, Vs Test
+* **SDLC Tools**: TFS, Visual Studio Online, Visual Studio, Git, Subversion, Octopus Deploy, BuildMaster, Gradle (Groovy), MSBuild, Nuget, Docker, NUnit, MsTest 
 
-* **Industries**: Financial, Retail/Wholesale, HVAC - BACnet, Commercial Software, Manufacturing
+* **Industries**: Financial, Retail/Wholesale, HVAC - BACnet, Commercial Software, Manufacturing, Import/Export
