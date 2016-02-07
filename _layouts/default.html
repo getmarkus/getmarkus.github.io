@@ -123,13 +123,12 @@
         </div>
         <main class="mdl-layout__content mdl-color--grey-100">
             {{ content }}
-
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">&copy; {{ 'now' | date: "%Y" }} {{ site.name }}</div>
-                </div>
-            </footer>
         </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">&copy; {{ 'now' | date: "%Y" }} {{ site.name }}</div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
