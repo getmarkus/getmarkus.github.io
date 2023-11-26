@@ -9,7 +9,6 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   integrations: [tailwind(), mdx(), alpinejs(), sitemap()],
   site: 'https://www.christophermarkus.com',
-  outDir: './docs',
   build: {
     assets: 'astro'
   }
