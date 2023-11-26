@@ -1,0 +1,16 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<!-- https://tailwindcss.com/docs/typography-plugin -->
+<article
+  class="prose prose-zinc prose-sm
+  prose-h1:font-bold prose-h1:prose-xl
+  prose-a:text-blue-600
+  prose-p:text-justify
+  prose-img:rounded-xl
+  prose-headings:underline"
+>
+  <h1>{frontmatter.title}</h1>
+  <slot />
+</article>

@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Software and coding documentation for Christopher Markus Software Development"><meta name="keywords" content="AWS, GCP, SRE, DevOps, Python, Java, .Net, dotnet, SQL, Solution Archtecture, System Design, Agile"><meta name="author" content="Christopher Markus"><meta name="viewport" content="width=device-width"><meta name="copyright" content="© 2023 by Christopher Markus is licensed under CC BY 4.0"><meta name="generator" content="Astro v3.6.0"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><title>Deploying Astro to GitHub Pages</title><meta property="og:title" content="Deploying Astro to GitHub Pages"><meta property="og:type" content="website"><meta property="og:url" content="https://www.christophermarkus.com/01-github-deploy/"><meta property="og:locale" content="en-us"><meta property="og:image" content="/astro/logo_a_1.b6766b0b.svg"><meta property="og:description" content="Software and coding documentation for Christopher Markus Software Development"><!-- <meta property="article:author" content="tstttt">
+    <meta property="article:section" content="test">
+    <meta property="article:tag" content="tttt">
+    <meta property="article:tag" content="ttt">
+    <meta property="article:tag" content="tt"> --><!-- <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="tttt">
+    <meta name="twitter:site" content="@sdfsfs">
+    <meta name="twitter:description" content="ttsfsdfs">
+    <meta name="twitter:image" content="sdfsdfds">
+    <meta name="twitter:image:alt" content="sdfsfsd"> --><!-- https://webcode.tools/structured-data-generator/article --><!-- https://www.linkedin.com/post-inspector/inspect/ --><!-- https://cards-dev.twitter.com/validator --><!-- https://ahrefs.com/site-audit --><link rel="stylesheet" href="/astro/_slug_.585530ef.css" /><script type="module" src="/astro/page.7730416e.js"></script></head> <body>   <div class="container px-6 m-auto"> <!-- https://css-tricks.com/scale-svg/
+https://stackoverflow.com/questions/44011677/how-to-make-svg-image-fits-to-parent-container --><!-- Component: Navbar with Topbar --><!-- Top bar --><div class="border-b border-zinc-200 bg-zinc-100"> <div class="mx-auto grid w-full max-w-full grid-cols-4 gap-6 py-2 px-6 text-sm text-zinc-500 md:grid-cols-8 lg:max-w-5xl lg:grid-cols-12 xl:max-w-7xl 2xl:max-w-[96rem]"> <div class="items-center col-span-2 md:col-span-4 lg:col-span-6"></div> <div class="items-center justify-end col-span-2 gap-6 md:col-span-4 lg:col-span-6"> <div class="flex items-center justify-end gap-4"> <a href="https://www.linkedin.com/in/cmarkus" class="transition-colors duration-300 hover:text-zinc-500"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" aria-labelledby="title-tb01 desc-tb01"> <title id="title-tb01">linkedin title</title> </svg><img src="/astro/logo-linkedin.3d971a9d.svg" alt="linkedin logo" width="16"> </a> <a href="https://github.com/getmarkus" class="transition-colors duration-300 hover:text-zinc-500"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" aria-labelledby="title-tb02 desc-tb02"> <title id="title-tb02">github title</title> </svg><img src="/astro/logo-github.daf1cfa5.svg" alt="linkedin logo" width="16"> </a> </div> </div> </div> </div> <!-- Header --> <header class="relative z-20 w-full border-b shadow-lg border-b-1 border-zinc-200 bg-white/90 shadow-zinc-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-zinc-200 lg:border-zinc-200 lg:backdrop-blur-sm lg:after:hidden"> <div class="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]"> <nav aria-label="main navigation" class="flex h-[5.5rem] items-stretch justify-between font-medium text-zinc-700" role="navigation"> <!-- Brand logo --> <a href="/" id="siteLogo" aria-label="CMSD logo" aria-current="page" class="flex items-center gap-2 py-3 text-lg whitespace-nowrap focus:outline-none lg:flex-1"> <img src="/astro/logo_a_1.b6766b0b.svg" alt="CMSD logo" width="100">
+Christopher Markus Software Development
+</a> </nav> </div> </header> <!-- End Navbar with Topbar--> <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12"> <div class="col-span-4 lg:col-span-3"><!-- <aside
+  id="nav-menu-1"
+  aria-label="Side navigation"
+  class="fixed top-0 bottom-0 left-0 z-40 flex flex-col transition-transform -translate-x-full bg-white border-r w-72 sm:translate-x-0 border-r-zinc-200"
+> --><nav aria-label="side navigation" class="flex-1 overflow-auto divide-y divide-zinc-100"> <div> <ul class="flex flex-col flex-1 gap-1 py-3"> <li class="px-3"> <a href="#" class="flex items-center gap-3 p-3 transition-colors rounded text-zinc-700 hover:text-zinc-500 hover:bg-zinc-50 focus:bg-zinc-50 aria-[current=page]:text-zinc-500 aria-[current=page]:bg-zinc-50"> <div class="flex items-center self-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" aria-label="Dashboard icon"> <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"></path> </svg> </div> <div class="flex flex-col items-start justify-center flex-1 w-full gap-0 overflow-hidden text-sm truncate">
+Guides
+</div> </a> </li> <ul> <li> <a href="01-github-deploy" class="inline-flex items-center text-sm transition-colors rounded text-zinc-700 hover:text-zinc-500 hover:bg-zinc-50 focus:bg-zinc-50 aria-[current=page]:text-zinc-500 aria-[current=page]:bg-zinc-50"> <span class="ml-4">Deploying Astro to GitHub Pages</span> </a> </li> </ul> </ul> </div> </nav> <!-- </aside> --> <!-- Backdrop --> <!-- <div
+  class="fixed top-0 bottom-0 left-0 right-0 z-30 transition-colors bg-zinc-900/20 sm:hidden"
+>
+</div> --> <!-- End Basic side navigation menu --></div> <div class="col-span-4 lg:col-span-6"> <main> <!-- https://tailwindcss.com/docs/typography-plugin --><article class="prose prose-zinc prose-sm
+  prose-h1:font-bold prose-h1:prose-xl
+  prose-a:text-blue-600
+  prose-p:text-justify
+  prose-img:rounded-xl
+  prose-headings:underline"> <h1>Deploying Astro to GitHub Pages</h1>  <!--- # Deploying Astro to GitHub Pages --->
+<p>Are you looking to host your <a href="https://docs.astro.build/en/concepts/why-astro/">Astro</a> website on GitHub Pages? This guide will walk you through the process.</p>
+<p>One of my favorite concepts in software development is Inversion. It has solved a lot of problems for me over the years. In fact you can <a href="https://www.mayooshin.com/inversion-charlie-munger-billionaire-thinking">extend the concept</a> outside of software engineering also.</p>
+<p>Astro is a modern web development framework that allows developers to create static websites with dynamic features. Developed by the team at <a href="https://vercel.com/">Vercel</a>, Astro uses an innovative concept called ”<a href="https://jasonformat.com/islands-architecture/">Islands</a>” to allow developers to mix and match different web technologies to build performant and flexible websites. Nice, elegant inversion of a basic web concept.</p>
+<p>In this article, we will explore how to deploy an Astro static site with GitHub Pages. Astro <a href="https://docs.astro.build/en/guides/deploy/github/">documents well how to use GitHub Actions</a> to deploy to GitHub Pages. But if that is a bit overkill for your simple static site, building locally and pushing to your repo works just as well with a few tweaks.</p>
+<h3 id="step-1-prepare-your-astro-project">Step 1: Prepare Your Astro Project</h3>
+<p>Before deploying your Astro project to GitHub Pages, you need to make a few changes to <a href="https://docs.astro.build/en/reference/configuration-reference/">Astro’s configuration</a>. Here are the steps to follow:</p>
+<ul>
+<li>Create an <code>.nojekyll</code> file at the root of your project. This file tells GitHub Pages not to process your files with Jekyll.</li>
+<li>Set the <code>output</code> property in your <code>astro.config.mjs</code> file to <code>static</code>.</li>
+<li>Set the <code>outDir</code> property in your <code>astro.config.mjs</code> file to <code>docs</code>. This is where your static files will be generated and served by GitHub Pages. <code>docs</code> is an hard GH convention.</li>
+<li>Remove the <code>_</code> prefix from the <code>build:assets</code> script in your <code>package.json</code> file. GitHub Pages build process won’t process any directory or file prefixed with an underscore.</li>
+</ul>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">// https://astro.build/config</span></span>
+<span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> default</span><span style="color:#B392F0"> defineConfig</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">  integrations: [</span></span>
+<span class="line"><span style="color:#6A737D">  // Enable Preact to support Preact JSX components.</span></span>
+<span class="line"><span style="color:#B392F0">  preact</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#6A737D">  // Enable React for the Algolia search component.</span></span>
+<span class="line"><span style="color:#B392F0">  react</span><span style="color:#E1E4E8">(), </span><span style="color:#B392F0">tailwind</span><span style="color:#E1E4E8">()],</span></span>
+<span class="line"><span style="color:#E1E4E8">  site: </span><span style="color:#9ECBFF">`https://www.christophermarkus.com`</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  output: </span><span style="color:#9ECBFF">'static'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  outDir: </span><span style="color:#9ECBFF">'./docs'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  build: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    assets: </span><span style="color:#9ECBFF">'astro'</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<ul>
+<li>Add a <code>/public/.nojekyll</code> and <code>/public/astro/.nojekyll</code> to the Public directory. The <a href="https://docs.astro.build/en/core-concepts/project-structure/#public">Public</a> directory allows you to transfer files to the output directory without processing.</li>
+</ul>
+<h3 id="step-2-build-your-astro-project">Step 2: Build Your Astro Project</h3>
+<p>After making the necessary changes to your Astro project, use the following command to build it:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#B392F0">npm</span><span style="color:#9ECBFF"> run</span><span style="color:#9ECBFF"> build</span></span></code></pre>
+<p>Verify the correct functioning output in <code>/docs</code>.</p>
+<h3 id="step-3-deploy-your-astro-project-to-github-pages">Step 3: Deploy Your Astro Project to GitHub Pages</h3>
+<p>Once your Astro project is built, you can deploy it to GitHub Pages using the following steps:</p>
+<ul>
+<li>Create a new <code>&#x3C;username>.github.io</code> repository on GitHub.</li>
+<li>Initialize a Git repository in your Astro project directory and add your GitHub repository as a remote.</li>
+<li>Commit and push your changes to the <code>main</code> branch of your GitHub repository.</li>
+<li>In your GitHub repository settings, navigate to the ”<a href="https://docs.github.com/en/pages/quickstart">Pages</a>” section and set the source to the <code>main</code> branch and <code>/docs</code> folder.
+<ul>
+<li>Alternatively, if you want to keep your main branch clean, you can deploy to a <code>gh-pages</code> branch (GH convention).</li>
+<li>This git command will just push your docs output directory: <code>git subtree push --prefix docs origin gh-pages</code></li>
+</ul>
+</li>
+<li>Click “Save” and wait a few minutes for your site to be available at <code>https://&#x3C;username>.github.io</code>.</li>
+</ul>
+<p>And that’s it! You’ve successfully deployed your Astro project to GitHub Pages. Now you can share your site with the world.</p>  </article> </main> </div> <div class="col-span-4 lg:col-span-3"></div> </div> </div>   <!-- Component: Footer with Three Columns and Sub Footer --><footer class="text-zinc-500"> <!-- Main footer --> <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer"> <div class="px-5 py-2"> <a href="#" class="text-sm text-zinc-500 hover:text-blue-600">
+Built with:
+</a> </div> <div class="px-5 py-2"> <a href="https://astro.build/" class="text-sm text-zinc-500 hover:text-blue-600">Astro</a> </div> <div class="px-5 py-2"> <a href="https://tailwindcss.com/" class="text-sm text-zinc-500 hover:text-blue-600">
+Tailwind
+</a> </div> <div class="px-5 py-2"> <a href="https://alpinejs.dev/" class="text-sm text-zinc-500 hover:text-blue-600">
+Alpine.js
+</a> </div> <div class="px-5 py-2"> <a href="https://ionic.io/ionicons" class="text-sm text-zinc-500 hover:text-blue-600">
+ionicons
+</a> </div> <div class="px-5 py-2"> <a href="https://wind-ui.com/" class="text-sm text-zinc-500 hover:text-blue-600">
+WindUI
+</a> </div> <div class="px-5 py-2"> <a href="https://windstatic.com/" class="text-sm text-zinc-500 hover:text-blue-600">
+windstatic
+</a> </div> </nav> <div class="flex justify-center mt-8 space-x-6"> <span class="inline-flex justify-center w-full gap-3 m-auto md:justify-start md:w-auto"> <a href="https://www.linkedin.com/in/cmarkus" class="transition-colors duration-300 hover:text-zinc-500"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" aria-labelledby="title-tb01 desc-tb01"> <title id="title-tb01">linkedin title</title> </svg><img src="/astro/logo-linkedin.3d971a9d.svg" alt="linkedin logo" width="16"> </a> <a href="https://github.com/getmarkus" class="transition-colors duration-300 hover:text-zinc-500"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" aria-labelledby="title-tb02 desc-tb02"> <title id="title-tb02">github title</title> </svg><img src="/astro/logo-github.daf1cfa5.svg" alt="linkedin logo" width="16"> </a> </span> </div> </div> <!-- Sub Footer --> <div class="py-4 text-sm border-t border-zinc-200 bg-zinc-100"> <div class="container px-6 mx-auto"> <div class="grid items-center grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12"> <a id="WindUI-3-sub" aria-label="CMSD logo" aria-current="page" class="flex items-center col-span-1 gap-2 text-sm font-medium leading-6 whitespace-nowrap focus:outline-none md:col-span-4 lg:col-span-6" href="/"> <img src="/astro/logo_a_1.b6766b0b.svg" alt="CMSD logo" width="50">
+CMSD © 2023 by Christopher Markus is licensed under CC BY 4.0
+</a> <nav class="col-span-3 md:col-span-4 lg:col-span-6" aria-labelledby="subfooter-links"> <ul class="flex flex-wrap items-center justify-end gap-2 lg:gap-4"> <li class="leading-6"> <a href="/terms" class="transition-colors duration-300 hover:text-zinc-500 focus:text-zinc-600">
+T&C
+</a> </li> <li class="leading-6"> <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-zinc-500 focus:text-zinc-600">
+Privacy</a> </li> <li class="leading-6"> <a href="/cookies" class="transition-colors duration-300 hover:text-zinc-500 focus:text-zinc-600">
+Cookies
+</a> </li> </ul> </nav> </div> </div> </div> </footer> <!-- End Footer with Three Columns and Sub Footer --> </body></html>

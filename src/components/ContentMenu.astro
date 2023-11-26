@@ -1,0 +1,71 @@
+---
+import { getCollection } from "astro:content";
+
+const guides = await getCollection("guides");
+---
+
+<!-- <aside
+  id="nav-menu-1"
+  aria-label="Side navigation"
+  class="fixed top-0 bottom-0 left-0 z-40 flex flex-col transition-transform -translate-x-full bg-white border-r w-72 sm:translate-x-0 border-r-zinc-200"
+> -->
+  <nav
+    aria-label="side navigation"
+    class="flex-1 overflow-auto divide-y divide-zinc-100"
+  >
+    <div>
+      <ul class="flex flex-col flex-1 gap-1 py-3">
+        <li class="px-3">
+          <a
+            href="#"
+            class="flex items-center gap-3 p-3 transition-colors rounded text-zinc-700 hover:text-zinc-500 hover:bg-zinc-50 focus:bg-zinc-50 aria-[current=page]:text-zinc-500 aria-[current=page]:bg-zinc-50"
+          >
+            <div class="flex items-center self-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                aria-label="Dashboard icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="flex flex-col items-start justify-center flex-1 w-full gap-0 overflow-hidden text-sm truncate"
+            >
+              Guides
+            </div>
+          </a>
+        </li>
+        <ul>
+          {
+            guides.map((post) => (
+              <li>
+                <a
+                  href={post.slug}
+                  class="inline-flex items-center text-sm transition-colors rounded text-zinc-700 hover:text-zinc-500 hover:bg-zinc-50 focus:bg-zinc-50 aria-[current=page]:text-zinc-500 aria-[current=page]:bg-zinc-50"
+                >
+                  <span class="ml-4">{post.data.title}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </ul>
+    </div>
+  </nav>
+<!-- </aside> -->
+
+<!-- Backdrop -->
+<!-- <div
+  class="fixed top-0 bottom-0 left-0 right-0 z-30 transition-colors bg-zinc-900/20 sm:hidden"
+>
+</div> -->
+<!-- End Basic side navigation menu -->
