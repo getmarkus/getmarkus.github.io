@@ -5,8 +5,6 @@ interface Props {
 
 const { title } = Astro.props;
 
-import Footer from "../components/Footer.astro";
-
 import logo from "../assets/logo_a_1.svg";
 const { href } = Astro.url;
 ---
@@ -61,5 +59,4 @@ const { href } = Astro.url;
   <body>
     <slot />
   </body>
-  <Footer />
 </html>

@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import ContentMenu from "../../components/ContentMenu.astro";
+import Footer from "../../components/Footer.astro";
 
 const allPosts = await getCollection("guides");
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
@@ -45,5 +46,6 @@ const pageTitle = "Tag Index";
       </div>
       <div class="col-span-4 lg:col-span-3"></div>
     </div>
+    <Footer />
   </div>
 </Layout>

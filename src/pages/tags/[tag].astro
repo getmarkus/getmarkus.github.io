@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import ContentMenu from "../../components/ContentMenu.astro";
+import Footer from "../../components/Footer.astro";
 
 export async function getStaticPaths() {
   const allGuides = await getCollection("guides");
@@ -43,7 +44,7 @@ const { guides } = Astro.props;
                       guides.map((post) => (
                         <li>
                           <a
-                            href={post.slug}
+                            href=`/${post.slug}`
                             class="inline-flex items-center text-sm transition-colors rounded text-zinc-700 hover:text-zinc-500 hover:bg-zinc-50 focus:bg-zinc-50 aria-[current=page]:text-zinc-500 aria-[current=page]:bg-zinc-50"
                           >
                             <span class="ml-4">{post.data.title}</span>
@@ -60,5 +61,6 @@ const { guides } = Astro.props;
       </div>
       <div class="col-span-4 lg:col-span-3"></div>
     </div>
+    <Footer />
   </div>
 </Layout>
