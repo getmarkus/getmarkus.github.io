@@ -5,7 +5,7 @@ const guides = await getCollection("guides");
 ---
 <div x-data="{ openMenu : false }">
 <!-- Mobile trigger -->
-<button @click="alert(openMenu); openMenu = !openMenu; alert(openMenu);" 
+<button @click="openMenu = !openMenu;" 
   title="Side navigation" 
   type="button" 
   class="fixed z-40 self-center order-10 visible block w-10 h-10 bg-white rounded opacity-100 lg:hidden" 
