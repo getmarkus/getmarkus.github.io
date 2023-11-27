@@ -4,12 +4,12 @@
 * https://github.com/withastro/starlight for organizing documents in a document/path specific manner
 
 ## Core components
-* [Astro]([https://](https://astro.build/))
+* [Astro](https://astro.build/)
 * [Astro Docs](https://github.com/withastro/docs)
-* [Tailwind]([https://](https://docs.astro.build/en/guides/integrations-guide/tailwind/))
+* [Tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)
 * [MDX](https://docs.astro.build/en/guides/integrations-guide/mdx/)
 * [Alpinejs](https://docs.astro.build/en/guides/integrations-guide/alpinejs/)
-* [ionicons]([https://](https://ionic.io/ionicons))
+* [ionicons](https://ionic.io/ionicons)
 * [WindUI](https://wind-ui.com/)
 * [windstatic](https://windstatic.com/)
 
