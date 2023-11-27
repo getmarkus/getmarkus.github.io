@@ -1,8 +1,5 @@
 # My basic soft dev journal
 
-## Inspiration and core references
-* https://github.com/withastro/starlight for organizing documents in a document/path specific manner
-
 ## Core components
 * [Astro](https://astro.build/)
 * [Astro Docs](https://github.com/withastro/docs)
@@ -12,6 +9,7 @@
 * [ionicons](https://ionic.io/ionicons)
 * [WindUI](https://wind-ui.com/)
 * [windstatic](https://windstatic.com/)
+* [Astro Starlight](https://github.com/withastro/starlight)
 
 ## 🧞 Commands
 
