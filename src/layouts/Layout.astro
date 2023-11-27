@@ -13,6 +13,7 @@ const { href } = Astro.url;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>{title}</title>
     <meta
       name="description"
       content="Software and coding documentation for Christopher Markus Software Development"
@@ -28,7 +29,7 @@ const { href } = Astro.url;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="robots" content="index, follow">
-    <title>{title}</title>
+    <meta name="googlebot" content="index, follow" />
 
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
