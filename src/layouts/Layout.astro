@@ -24,11 +24,14 @@ const { href } = Astro.url;
     />
     <meta name="author" content="Christopher Markus" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="copyright" content="© 2023 by Christopher Markus is licensed under CC BY 4.0">
+    <meta
+      name="copyright"
+      content="© 2023 by Christopher Markus is licensed under CC BY 4.0"
+    />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
 
     <meta property="og:title" content={title} />
@@ -36,7 +39,10 @@ const { href } = Astro.url;
     <meta property="og:url" content={href} />
     <meta property="og:locale" content="en-us" />
     <meta property="og:image" content={logo.src} />
-    <meta property="og:description" content="Software and coding documentation for Christopher Markus Software Development" />
+    <meta
+      property="og:description"
+      content="Software and coding documentation for Christopher Markus Software Development"
+    />
 
     <!-- <meta property="article:author" content="tstttt">
     <meta property="article:section" content="test">
@@ -51,11 +57,11 @@ const { href } = Astro.url;
     <meta name="twitter:image" content="sdfsdfds">
     <meta name="twitter:image:alt" content="sdfsfsd"> -->
 
+    <!-- https://github.com/jonasmerlin/astro-seo -->
     <!-- https://webcode.tools/structured-data-generator/article -->
     <!-- https://www.linkedin.com/post-inspector/inspect/ -->
     <!-- https://cards-dev.twitter.com/validator -->
     <!-- https://ahrefs.com/site-audit -->
-
   </head>
   <body>
     <slot />

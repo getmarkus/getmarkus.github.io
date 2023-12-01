@@ -1,23 +1,23 @@
 ---
 import Layout from "./Layout.astro";
-const { frontmatter } = Astro.props;
-
 import ContentMenu from "../components/ContentMenu.astro";
-import Prose from "../components/Prose.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={title}>
   <div class="container px-6 m-auto">
     <Header />
     <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
       <div class="col-span-4 lg:col-span-3"><ContentMenu /></div>
       <div class="col-span-4 lg:col-span-6">
         <main>
-          <Prose title={frontmatter.title}>
-            <slot />
-          </Prose>
+          <slot />
         </main>
       </div>
       <div class="col-span-4 lg:col-span-3"></div>
