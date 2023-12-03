@@ -18,7 +18,7 @@ Here is an [Astro](https://github.com/getmarkus/astro-vanilla-framework) templat
 
 Ubuntu* - not affiliated (just a fan)
 
-```
+```bash
 npm create astro@latest -- --template getmarkus/astro-vanilla-framework
 ```
 
