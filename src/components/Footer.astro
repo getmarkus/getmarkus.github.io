@@ -5,7 +5,7 @@ import github from "../assets/logo-github.svg";
 ---
 
 <!-- Component: Footer with Three Columns and Sub Footer -->
-<footer class="text-zinc-500">
+<footer>
   <!-- Main footer -->
   <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
     <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
@@ -49,7 +49,6 @@ import github from "../assets/logo-github.svg";
       >
         <a
           href="https://www.linkedin.com/in/cmarkus"
-          class="transition-colors duration-300 hover:text-zinc-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +56,6 @@ import github from "../assets/logo-github.svg";
             viewBox="0 0 48 48"
             height="16"
             width="16"
-            aria-labelledby="title-tb01 desc-tb01"
           >
             <title id="title-tb01">linkedin title</title>
             <img src={linkedin.src} alt="linkedin logo" width="16" />
@@ -65,7 +63,6 @@ import github from "../assets/logo-github.svg";
         </a>
         <a
           href="https://github.com/getmarkus"
-          class="transition-colors duration-300 hover:text-zinc-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +70,6 @@ import github from "../assets/logo-github.svg";
             viewBox="0 0 48 48"
             height="16"
             width="16"
-            aria-labelledby="title-tb02 desc-tb02"
           >
             <title id="title-tb02">github title</title>
             <img src={github.src} alt="linkedin logo" width="16" />
@@ -83,16 +79,15 @@ import github from "../assets/logo-github.svg";
     </div>
   </div>
   <!-- Sub Footer -->
-  <div class="py-4 text-sm border-t border-zinc-200 bg-zinc-100">
+  <div class="py-4 text-sm border-t border-zinc-200">
     <div class="container px-6 mx-auto">
       <div
         class="grid items-center grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12"
       >
         <a
-          id="WindUI-3-sub"
           aria-label="CMSD logo"
           aria-current="page"
-          class="flex items-center col-span-2 gap-2 text-sm font-medium leading-6  hover:text-blue-500 focus:outline-none md:col-span-4 lg:col-span-6"
+          class="flex items-center col-span-2 gap-2 leading-6 focus:outline-none md:col-span-4 lg:col-span-6"
           href="/"
         >
           <img src={logo.src} alt="CMSD logo" width="50" />
@@ -100,13 +95,12 @@ import github from "../assets/logo-github.svg";
         </a>
         <nav
           class="col-span-2 md:col-span-4 lg:col-span-6"
-          aria-labelledby="subfooter-links"
         >
           <ul class="flex flex-wrap items-center justify-end gap-2 lg:gap-4">
             <li class="leading-6">
               <a
                 href="/terms"
-                class="transition-colors duration-300 hover:text-blue-500 focus:text-zinc-600"
+                class="hover:text-blue-500 focus:text-zinc-600"
               >
                 T&C
               </a>
@@ -114,7 +108,7 @@ import github from "../assets/logo-github.svg";
             <li class="leading-6">
               <a
                 href="javascript:void(0)"
-                class="transition-colors duration-300 hover:text-blue-500 focus:text-zinc-600"
+                class="hover:text-blue-500 focus:text-zinc-600"
               >
                 Privacy</a
               >
@@ -122,7 +116,7 @@ import github from "../assets/logo-github.svg";
             <li class="leading-6">
               <a
                 href="/cookies"
-                class="transition-colors duration-300 hover:text-blue-500 focus:text-zinc-600"
+                class="hover:text-blue-500 focus:text-zinc-600"
               >
                 Cookies
               </a>

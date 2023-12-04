@@ -9,20 +9,20 @@ https://stackoverflow.com/questions/44011677/how-to-make-svg-image-fits-to-paren
 
 <!-- Component: Navbar with Topbar -->
 <!-- Top bar -->
-<div class="border-b border-zinc-200 bg-zinc-100">
-    <div class="mx-auto grid w-full max-w-full grid-cols-4 gap-6 py-2 px-6 text-sm text-zinc-500 md:grid-cols-8 lg:max-w-5xl lg:grid-cols-12 xl:max-w-7xl 2xl:max-w-[96rem]">
+<div class="border-b border-zinc-200">
+    <div class="mx-auto grid w-full max-w-full grid-cols-4 gap-6 py-2 px-6 md:grid-cols-8 lg:max-w-5xl lg:grid-cols-12 xl:max-w-7xl 2xl:max-w-[96rem]">
       <div class="items-center col-span-2 md:col-span-4 lg:col-span-6">
       </div>
       <div class="items-center justify-end col-span-2 gap-6 md:col-span-4 lg:col-span-6">
         <div class="flex items-center justify-end gap-4">
-          <a href="https://www.linkedin.com/in/cmarkus" class="transition-colors duration-300 hover:text-zinc-500">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" aria-labelledby="title-tb01 desc-tb01">
+          <a href="https://www.linkedin.com/in/cmarkus">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" >
               <title id="title-tb01">linkedin title</title>
               <img src={linkedin.src} alt="linkedin logo" width="16" />
             </svg>
           </a>
-          <a href="https://github.com/getmarkus" class="transition-colors duration-300 hover:text-zinc-500">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" aria-labelledby="title-tb02 desc-tb02">
+          <a href="https://github.com/getmarkus">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" >
               <title id="title-tb02">github title</title>
               <img src={github.src} alt="linkedin logo" width="16" />
             </svg>
@@ -33,11 +33,11 @@ https://stackoverflow.com/questions/44011677/how-to-make-svg-image-fits-to-paren
   </div>
   
   <!-- Header -->
-  <header class="relative z-20 w-full border-b shadow-lg border-b-1 border-zinc-200 bg-white/90 shadow-zinc-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-zinc-200 lg:border-zinc-200 lg:backdrop-blur-sm lg:after:hidden">
+  <header class="relative z-20 w-full border-b border-b-1 border-zinc-200 ">
     <div class="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
-      <nav aria-label="main navigation" class="flex h-[5.5rem] items-stretch justify-between font-medium text-zinc-700" role="navigation">
+      <nav aria-label="main navigation" class="flex h-[5.5rem]" role="navigation">
         <!-- Brand logo -->
-        <a href="/" id="siteLogo" aria-label="CMSD logo" aria-current="page" class="flex items-center gap-2 py-3 text-lg focus:outline-none lg:flex-1" >
+        <a href="/" id="siteLogo" aria-label="CMSD logo" aria-current="page" class="flex items-center gap-2 py-3 focus:outline-none lg:flex-1" >
             <img src={logo.src} alt="CMSD logo" width="100" />
           Christopher Markus Software Development
         </a>

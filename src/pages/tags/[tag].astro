@@ -38,14 +38,14 @@ const { guides } = Astro.props;
             >
               <div class="max-w-xl mx-auto text-center lg:p-10">
                 <div>
-                  <p class="max-w-xl mx-auto mt-4 text-lg tracking-tight text-zinc-600">Posts tagged with {tag}</p>
+                  <p class="max-w-xl mx-auto mt-4 text-lg">Posts tagged with {tag}</p>
                   <ul>
                     {
                       guides.map((post) => (
                         <li>
                           <a
                             href=`/${post.slug}`
-                            class="inline-flex items-center text-sm transition-colors rounded  text-blue-700 hover:text-zinc-500 hover:bg-zinc-50 focus:bg-zinc-50 aria-[current=page]:text-zinc-500 aria-[current=page]:bg-zinc-50"
+                            class="inline-flex items-center text-sm text-blue-700 hover:text-zinc-500 hover:bg-zinc-50 focus:bg-zinc-50"
                           >
                             <span class="ml-4">{post.data.title}</span>
                           </a>
