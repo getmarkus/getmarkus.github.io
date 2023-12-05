@@ -7,7 +7,11 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), mdx(), alpinejs(), sitemap()],
+  integrations: [tailwind(
+    {
+      applyBaseStyles: false,
+    }
+  ), mdx(), alpinejs(), sitemap()],
   site: 'https://www.christophermarkus.com',
   build: {
     assets: 'astro'
