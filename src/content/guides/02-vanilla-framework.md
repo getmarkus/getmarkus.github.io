@@ -8,7 +8,9 @@ I have been working with Tailwind CSS recently and wow is it efficient to work w
 
 Then I found Ubuntu's [Vanilla](https://vanillaframework.io/) CSS framework. 
 
-Here is an [Astro](https://github.com/getmarkus/astro-vanilla-framework) template to show off some capablities.
+Here is an [Astro](https://github.com/getmarkus/astro-vanilla-framework) template to show off some capablities. 
+
+Live demo: https://www.christophermarkus.com/astro-vanilla-framework/
 
 * SASS/SCSS framework
 * Minimal
