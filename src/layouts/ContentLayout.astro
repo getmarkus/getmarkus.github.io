@@ -15,9 +15,13 @@ import Footer from "../components/Footer.astro";
       <div class="col-span-4 md:col-span-3"><ContentMenu /></div>
       <div class="col-span-4 lg:col-span-6">
         <main>
+          <div
+              class="items-center py-3"
+            >
           <Prose title={frontmatter.title}>
             <slot />
           </Prose>
+          </div>
         </main>
       </div>
     </div>
