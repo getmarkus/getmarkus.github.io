@@ -12,7 +12,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }
   ), mdx(), alpinejs(), sitemap()],
-  site: 'https://www.christophermarkus.com',
+  site: 'https://www.cmsoftdev.com',
   build: {
     assets: 'astro'
   }
