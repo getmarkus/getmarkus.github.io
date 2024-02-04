@@ -12,10 +12,10 @@ const guides = await getCollection("guides");
 <!-- Mobile trigger -->
 
 <img src={hamburger.src} 
-  alt="side menue button" 
+  alt="side menu button" 
   width="25" 
   @click="openMenu = !openMenu;" 
-  class="md:invisible lg:hidden" 
+  class="xl:invisible 2xl:hidden" 
   x-transition />
 
 <!-- Side Navigation Popout -->
@@ -26,20 +26,20 @@ const guides = await getCollection("guides");
   @click.away="openMenu = false"
   x-transition
   aria-label="Side navigation"
-  class="fixed z-40 flex flex-col md:invisible bg-white border-r w-72 border-r-sand-200"
+  class="fixed z-40 flex flex-col flex-wrap xl:invisible bg-white border-r w-64 border-r-sand-200"
 > 
   <nav
     aria-label="side navigation"
-    class="flex-1 overflow-auto divide-y divide-sand-200"
+    class="flex-1 flex-wrap divide-y divide-sand-200"
   >
     <div>
-      <ul class="flex flex-col flex-1 gap-1 py-3">
+      <ul class="flex flex-col flex-1 flex-wrap gap-1 py-3">
         <li class="px-3">
           <a
             href="#"
-            class="flex items-center gap-3 p-3"
+            class="flex flex-wrap gap-3 p-3"
           >
-            <div class="flex items-center self-center">
+            <div class="flex flex-wrap">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -57,19 +57,19 @@ const guides = await getCollection("guides");
               </svg>
             </div>
             <div
-              class="flex flex-col items-start justify-center flex-1 w-full gap-0 overflow-hidden truncate"
+              class="flex flex-col flex-wrap flex-1 w-full gap-0 overflow-hidden truncate"
             >
               Guides
             </div>
           </a>
         </li>
-        <ul>
+        <ul class="list-disc">
           {
             guides.map((post) => (
               <li>
                 <a
                   href=`/${post.slug}`
-                  class="inline-flex items-center text-sm"
+                  class="inline-flex flex-wrap text-sm"
                 >
                   <span class="ml-4">{post.data.title}</span>
                 </a>
@@ -86,21 +86,21 @@ const guides = await getCollection("guides");
 <aside
   id="nav-menu-1"
   aria-label="Side navigation"
-  class="fixed z-40 flex flex-col invisible md:visible bg-sand w-auto"
+  class="fixed z-40 flex flex-col flex-wrap invisible xl:visible bg-sand w-64"
   x-transition
 > 
   <nav
     aria-label="side navigation"
-    class="flex-1 overflow-auto divide-y divide-sand-200"
+    class="flex-1 flex-wrap divide-y divide-sand-200"
   >
     <div>
-      <ul class="flex flex-col flex-1 gap-1 py-3">
+      <ul class="flex flex-col flex-1 flex-wrap gap-1 py-3">
         <li class="px-3">
           <a
             href="#"
-            class="flex items-center gap-3 p-3"
+            class="flex flex-wrap gap-3 p-3"
           >
-            <div class="flex items-center self-center">
+            <div class="flex flex-wrap">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -118,19 +118,19 @@ const guides = await getCollection("guides");
               </svg>
             </div>
             <div
-              class="flex flex-col items-start justify-center flex-1 w-full gap-0 overflow-hidden truncate"
+              class="flex flex-col flex-wrap flex-1 w-full gap-0 overflow-hidden truncate"
             >
               Guides
             </div>
           </a>
         </li>
-        <ul>
+        <ul class="list-disc">
           {
             guides.map((post) => (
               <li>
                 <a
                   href=`/${post.slug}`
-                  class="inline-flex items-center text-sm"
+                  class="inline-flex flex-wrap text-sm"
                 >
                   <span class="ml-4">{post.data.title}</span>
                 </a>
@@ -145,7 +145,7 @@ const guides = await getCollection("guides");
 
 <!-- Backdrop -->
 <div
-  class="fixed top-0 bottom-0 left-0 right-0 z-30 transition-colors bg-sand-900/20 sm:hidden"
+  class="fixed top-0 bottom-0 left-0 right-0 z-30 transition-colors bg-sand-900/20 xl:hidden"
   x-show="openMenu"
   @keydown.window.escape="openMenu=false"
   x-transition

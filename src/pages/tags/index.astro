@@ -11,11 +11,11 @@ const pageTitle = "Tag Index";
 ---
 
 <Layout title={pageTitle}>
-  <div class="container px-6 m-auto">
+  <div class="container px-6 m-auto text-sand-800">
     <Header />
-    <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-      <div class="col-span-4 lg:col-span-3"><ContentMenu /></div>
-      <div class="col-span-4 lg:col-span-6">
+    <div class="grid grid-cols-4 gap-6 xl:grid-cols-12">
+      <div class="col-span-4 xl:col-span-3"><ContentMenu /></div>
+      <div class="col-span-4 xl:col-span-6">
         <main>
           <section>
             <div
@@ -30,7 +30,7 @@ const pageTitle = "Tag Index";
                         <li>
                           <a
                             href={`/tags/${tag}`}
-                            class="inline-flex items-center text-sm text-blue-700 hover:text-sand-500"
+                            class="inline-flex items-center text-sm text-blue-700"
                           >
                             <span class="ml-4">{tag}</span>
                           </a>
@@ -44,7 +44,6 @@ const pageTitle = "Tag Index";
           </section>
         </main>
       </div>
-      <div class="col-span-4 lg:col-span-3"></div>
     </div>
     <Footer />
   </div>

@@ -26,11 +26,11 @@ const { guides } = Astro.props;
 ---
 
 <Layout title={(tag as string).toString()}>
-  <div class="container px-6 m-auto">
+  <div class="container px-6 m-auto text-sand-800">
     <Header />
-    <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-      <div class="col-span-4 lg:col-span-3"><ContentMenu /></div>
-      <div class="col-span-4 lg:col-span-6">
+    <div class="grid grid-cols-4 gap-6 xl:grid-cols-12">
+      <div class="col-span-4 xl:col-span-3"><ContentMenu /></div>
+      <div class="col-span-4 xl:col-span-6">
         <main>
           <section>
             <div
@@ -45,7 +45,7 @@ const { guides } = Astro.props;
                         <li>
                           <a
                             href=`/${post.slug}`
-                            class="inline-flex items-center text-sm text-blue-700 hover:text-sand-500"
+                            class="inline-flex items-center text-sm text-blue-700"
                           >
                             <span class="ml-4">{post.data.title}</span>
                           </a>
@@ -59,7 +59,6 @@ const { guides } = Astro.props;
           </section>
         </main>
       </div>
-      <div class="col-span-4 lg:col-span-3"></div>
     </div>
     <Footer />
   </div>
