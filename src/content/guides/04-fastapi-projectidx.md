@@ -58,7 +58,7 @@ The project requires:
 
 Use this repo as the template for your project
 
-[https://github.com/getmarkus/community-templates/tree/main/full-stack-fastapi-template](https://github.com/getmarkus/community-templates/tree/main/full-stack-fastapi-template)
+[https://github.com/project-idx/community-templates/tree/main/full-stack-fastapi-template](https://github.com/project-idx/community-templates/tree/main/full-stack-fastapi-template)
 
 Project IDX Generator:
 
